@@ -15,7 +15,7 @@ const Upload = () => {
       console.log("File:", file[0]);
 
       const formData = new FormData();
-      formData.append("file", file[0]); // Change here to select only the first file if multiple files are selected
+      formData.append("file", file[0]); 
       console.log("FormData:", formData);
       
     } catch (error) {
