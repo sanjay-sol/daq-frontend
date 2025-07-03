@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-
+import { useRouter } from "next/navigation";
 export default function RegionPage() {
+    const router = useRouter();
   const { region } = useParams();
   const [farms, setFarms] = useState([]);
   const [showForm, setShowForm] = useState(false);
@@ -129,7 +130,13 @@ export default function RegionPage() {
             <p><strong>Last Visited:</strong> {farm.last_visited}</p>
             <p><strong>State:</strong> {farm.state}</p>
             <p><strong>Village:</strong> {farm.village}</p>
-            <p><strong>UFD:</strong> {farm.ufd}</p>
+                <p><strong>UFD:</strong> {farm.ufd}</p>
+                <button
+        onClick={() => router.push(`/farm-details/${farm.ufd}`)}
+        className="mt-2 bg-purple-400 text-white px-4 py-1 rounded hover:bg-blue-700"
+      >
+        View Details
+      </button>
           </div>
         ))
       ) : (

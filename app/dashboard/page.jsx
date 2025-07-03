@@ -185,6 +185,12 @@ const OperatorDashboard = () => {
               <p><strong>Village:</strong> {farm.village}</p>
               <p><strong>UFD:</strong> {farm.ufd}</p>
               <button className="bg-gray-500 text-white p-2 rounded-md m-2">View History</button>
+              <button
+        onClick={() => router.push(`/farm-details/${farm.ufd}`)}
+        className="mt-2 bg-purple-400 text-white px-5 pt-2 pb-2 py-1 rounded hover:bg-blue-700"
+      >
+        View Details
+      </button>
             </div>
           ))
         ) : (
