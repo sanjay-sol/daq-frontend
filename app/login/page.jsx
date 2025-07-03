@@ -27,8 +27,8 @@ const LoginPage = () => {
       }
 
       const data = await res.json();
-     const did = data.did; // ✅ since you're returning the operator object directly
-router.push(`/dashboard/${did}`);
+      localStorage.setItem("uod", data.uod); 
+router.push(`/dashboard/`);
     } catch (err) {
       setError(err.message);
     }
@@ -43,7 +43,7 @@ router.push(`/dashboard/${did}`);
           placeholder="Phone number"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="border p-2"
+          className="border p-2 text-black"
         />
         <button type="submit" className="bg-blue-500 text-white px-4 py-2">
           Check Operator

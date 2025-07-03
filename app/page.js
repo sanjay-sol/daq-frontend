@@ -21,8 +21,8 @@ const App = () => {
             Let{"'"}s Connect
           </p>
         </div>
-        <div class="flex items-center justify-center  bg-black">
-          <div class="flex items-center justify-center gap-x-5 ">
+        <div className="flex items-center justify-center  bg-black">
+          <div className="flex items-center justify-center gap-x-5 ">
             <a
               href={urlLinkedIn}
               aria-label="Find us on LinkedIn"
@@ -30,7 +30,7 @@ const App = () => {
               rel="noopener"
             >
               <svg
-                class="h-10 w-10 text-white"
+                className="h-10 w-10 text-white"
                 viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const App = () => {
               rel="noopener"
             >
               <svg
-                class="h-10 w-10 text-white"
+                className="h-10 w-10 text-white"
                 viewBox="0 0 48 40"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const App = () => {
               rel="noopener"
             >
               <svg
-                class="h-10 w-10 text-white"
+                className="h-10 w-10 text-white"
                 viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

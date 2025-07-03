@@ -40,17 +40,22 @@ const LeftSidebar = () => {
       </div>
 
       <div className='mt-10 px-6'>
-            <div className='flex cursor-pointer gap-4 p-4'>
-              <Image
-                src='/assets/logout.svg'
-                alt='logout'
-                width={24}
-                height={24}
-              />
-
-              <p className='text-light-2 max-lg:hidden'>Logout</p>
-            </div>
-      </div>
+  <div
+    className='flex cursor-pointer gap-4 p-4'
+    onClick={() => {
+      localStorage.removeItem("uod");
+      router.push("/login");
+    }}
+  >
+    <Image
+      src='/assets/logout.svg'
+      alt='logout'
+      width={24}
+      height={24}
+    />
+    <p className='text-light-2 max-lg:hidden'>Logout</p>
+  </div>
+</div>
     </section>
   );
 };
