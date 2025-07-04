@@ -84,9 +84,16 @@ export default function OperatorProfilePage() {
         {/* Harddisk Tracker Button */}
         <button
         className="bg-red-500 hover:bg-red-800 text-white px-4 py-2 rounded"
-        onClick={() => router.push("/logs")}
+        onClick={() => router.push("/notifications")}
       >
         🔔 View Notifications
+      </button>
+      <br />
+      <button
+        className="bg-red-500 hover:bg-red-800 text-white px-4 py-2 rounded"
+        onClick={() => router.push("/logs")}
+      >
+        🔔 View All logs
       </button>
     </div>
   );
